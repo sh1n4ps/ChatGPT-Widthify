@@ -1,0 +1,14 @@
+{
+  "manifest_version": 1,
+  "name": "ChatGPT Widthify",
+  "version": "1.0",
+  "description": "Makes the chat window wider",
+  "content_scripts": [
+    {
+      "matches": ["*://chat.openai.com/*"],
+      "js": ["contentScript.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}

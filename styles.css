@@ -1,0 +1,44 @@
+input[type=range] {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.5em;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1em;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    cursor: pointer;
+    height: 1em;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+}
+
+#cex-div {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.cex-slider-sidebar {
+}
+.cex-slider-text {
+}
