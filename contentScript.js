@@ -15,6 +15,13 @@ function createSlider(sliderClass, min, max, value, ...targetClasses) {
     slider.type = 'range';
     slider.min = min;
     slider.max = max;
+    if (targetClasses.includes('text-base')) {
+        const textBaseElement = document.querySelector('.text-base');
+        if (textBaseElement) {
+            value = parseInt(getComputedStyle(textBaseElement).maxWidth);
+        }
+    }
+
     slider.value = value;
     slider.classList.add(sliderClass);
 
@@ -42,6 +49,16 @@ function applyObserver() {
                 document.querySelectorAll('.text-base').forEach(element => {
                     element.style.maxWidth = `${document.querySelector('.cex-slider-text').value}px`;
                 });
+
+                if (!document.querySelector('.cex-side-bar') && !document.querySelector('.cex-content')) {
+                    updateElements('.md\\:w-\\[260px\\]', 'cex-side-bar');
+                    updateElements('.md\\:pl-\\[260px\\]', 'cex-content');
+                }
+
+                const cexWidth = document.querySelector('.cex-slider-sidebar').value;
+                document.querySelectorAll('.cex-side-bar').forEach(element => element.style.width = `${cexWidth}px`);
+                document.querySelectorAll('.cex-content').forEach(element => element.style.paddingLeft = `${cexWidth}px`);
+
             }
         });
     });
