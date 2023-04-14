@@ -1,6 +1,5 @@
 function updateElements(selector, className) {
     const elements = document.querySelectorAll(selector);
-    console.log(elements);
     elements.forEach(element => element.classList.add(className));
 }
 
