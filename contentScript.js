@@ -66,7 +66,7 @@ function applyObserver() {
 }
 
 setTimeout(() => {
-    updateElements('.md\\:w-\\[260px\\]', 'cex-side-bar');
+    updateElements('.w-\\[260px\\]', 'cex-side-bar');
     updateElements('.md\\:pl-\\[260px\\]', 'cex-content');
     createDiv('cex-div');
     createSlider('cex-slider-sidebar', '200', '800', '260', 'cex-side-bar', 'cex-content');

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "ChatGPT Widthify",
-  "version": "1.0.1",
-  "description": "Makes the chat window wider",
+  "version": "1.0.2",
+  "description": "画面上に表示されるスライドを操作することによってサイドバーの横幅とテキストが表示されるエリアの横幅を変更することができます。",
   "icons": {
     "128": "images/icon128.png"
   },
