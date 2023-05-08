@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ChatGPT Widthify",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "画面上に表示されるスライドを操作することによってサイドバーの横幅とテキストが表示されるエリアの横幅を変更することができます。",
   "icons": {
     "128": "images/icon128.png"
