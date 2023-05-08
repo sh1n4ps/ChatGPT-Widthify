@@ -47,13 +47,12 @@ function applyObserver() {
                     element.style.maxWidth = `${document.querySelector('.cex-slider-text').value}px`;
                 });
 
-                if (!document.querySelector('.cex-side-bar') && !document.querySelector('.cex-content')) {
+                if (!document.querySelector('.cex-side-bar')) {
                     updateElements('.w-\\[260px\\]', 'cex-side-bar');
                 }
 
                 const cexWidth = document.querySelector('.cex-slider-sidebar').value;
                 document.querySelectorAll('.cex-side-bar').forEach(element => element.style.width = `${cexWidth}px`);
-                document.querySelectorAll('.cex-content').forEach(element => element.style.paddingLeft = `${cexWidth}px`);
 
             }
         });
