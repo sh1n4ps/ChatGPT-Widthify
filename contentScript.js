@@ -31,8 +31,6 @@ function createSlider(sliderClass, min, max, value, ...targetClasses) {
 
             if (targetClass === 'cex-side-bar') {
                 elements.forEach(element => element.style.width = `${cexWidth}px`);
-            } else if (targetClass === 'cex-content') {
-                elements.forEach(element => element.style.paddingLeft = `${cexWidth}px`);
             } else if (targetClass === 'text-base') {
                 elements.forEach(element => element.style.maxWidth = `${cexWidth}px`);
             }
@@ -51,7 +49,6 @@ function applyObserver() {
 
                 if (!document.querySelector('.cex-side-bar') && !document.querySelector('.cex-content')) {
                     updateElements('.w-\\[260px\\]', 'cex-side-bar');
-                    updateElements('.md\\:pl-\\[260px\\]', 'cex-content');
                 }
 
                 const cexWidth = document.querySelector('.cex-slider-sidebar').value;
@@ -67,9 +64,8 @@ function applyObserver() {
 
 setTimeout(() => {
     updateElements('.w-\\[260px\\]', 'cex-side-bar');
-    updateElements('.md\\:pl-\\[260px\\]', 'cex-content');
     createDiv('cex-div');
-    createSlider('cex-slider-sidebar', '200', '800', '260', 'cex-side-bar', 'cex-content');
+    createSlider('cex-slider-sidebar', '200', '800', '260', 'cex-side-bar');
     createSlider('cex-slider-text', '600', '1800', '680', 'text-base');
     applyObserver();
 }, 1000);
