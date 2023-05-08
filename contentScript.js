@@ -50,7 +50,7 @@ function applyObserver() {
                 });
 
                 if (!document.querySelector('.cex-side-bar') && !document.querySelector('.cex-content')) {
-                    updateElements('.md\\:w-\\[260px\\]', 'cex-side-bar');
+                    updateElements('.w-\\[260px\\]', 'cex-side-bar');
                     updateElements('.md\\:pl-\\[260px\\]', 'cex-content');
                 }
 
